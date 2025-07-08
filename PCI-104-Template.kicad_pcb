@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -16,41 +16,42 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -60,7 +61,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -68,16 +68,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -237,19 +240,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "07c12a65-f8f4-41ee-8f8d-534c303901ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -288,7 +278,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "c255eb52-ffcc-48c6-822e-f165d5d1850e")
 		)
@@ -299,7 +289,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "aa6d2e08-1a92-4b30-8601-02c01b039673")
 		)
@@ -343,6 +333,7 @@
 			(pintype "input")
 			(uuid "10254ab1-498f-48d4-bc6d-3f55e6c38690")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 		(layer "F.Cu")
@@ -369,19 +360,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1163eaea-03b5-400a-ad9f-b50ac8502cd2")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -424,7 +402,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "df2f0b2a-003e-4a2e-9621-9740c22e371f")
 		)
@@ -435,7 +413,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "271b480f-0ab9-43a5-83fa-282c9a04095c")
 		)
@@ -479,6 +457,7 @@
 			(pintype "input")
 			(uuid "1fdb7974-4498-4625-a283-4e7b62bb85f3")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_PinSocket_2.00mm:PinSocket_2x30_P2.00mm_Vertical"
 		(layer "F.Cu")
@@ -505,19 +484,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.00mm:PinSocket_2x30_P2.00mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b828f80d-7063-4f32-a3a8-a740885bfe91")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -737,7 +703,7 @@
 		(pad "a1" thru_hole oval
 			(at -2 0 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 37 "unconnected-(J1-Pin_a1-Pada1)")
@@ -748,7 +714,7 @@
 		(pad "a2" thru_hole oval
 			(at -2 2 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 44 "unconnected-(J1-Pin_a2-Pada2)")
@@ -759,7 +725,7 @@
 		(pad "a3" thru_hole oval
 			(at -2 4 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 49 "unconnected-(J1-Pin_a3-Pada3)")
@@ -770,7 +736,7 @@
 		(pad "a4" thru_hole oval
 			(at -2 6 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 61 "unconnected-(J1-Pin_a4-Pada4)")
@@ -781,7 +747,7 @@
 		(pad "a5" thru_hole oval
 			(at -2 8 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 31 "unconnected-(J1-Pin_a5-Pada5)")
@@ -792,7 +758,7 @@
 		(pad "a6" thru_hole oval
 			(at -2 10 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 59 "unconnected-(J1-Pin_a6-Pada6)")
@@ -803,7 +769,7 @@
 		(pad "a7" thru_hole oval
 			(at -2 12 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 30 "unconnected-(J1-Pin_a7-Pada7)")
@@ -814,7 +780,7 @@
 		(pad "a8" thru_hole oval
 			(at -2 14 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "unconnected-(J1-Pin_a8-Pada8)")
@@ -825,7 +791,7 @@
 		(pad "a9" thru_hole oval
 			(at -2 16 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 3 "unconnected-(J1-Pin_a9-Pada9)")
@@ -836,7 +802,7 @@
 		(pad "a10" thru_hole oval
 			(at -2 18 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 7 "unconnected-(J1-Pin_a10-Pada10)")
@@ -847,7 +813,7 @@
 		(pad "a11" thru_hole oval
 			(at -2 20 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 20 "unconnected-(J1-Pin_a11-Pada11)")
@@ -858,7 +824,7 @@
 		(pad "a12" thru_hole oval
 			(at -2 22 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 13 "unconnected-(J1-Pin_a12-Pada12)")
@@ -869,7 +835,7 @@
 		(pad "a13" thru_hole oval
 			(at -2 24 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 58 "unconnected-(J1-Pin_a13-Pada13)")
@@ -880,7 +846,7 @@
 		(pad "a14" thru_hole oval
 			(at -2 26 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 53 "unconnected-(J1-Pin_a14-Pada14)")
@@ -891,7 +857,7 @@
 		(pad "a15" thru_hole oval
 			(at -2 28 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 25 "unconnected-(J1-Pin_a15-Pada15)")
@@ -902,7 +868,7 @@
 		(pad "a16" thru_hole oval
 			(at -2 30 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 45 "unconnected-(J1-Pin_a16-Pada16)")
@@ -913,7 +879,7 @@
 		(pad "a17" thru_hole oval
 			(at -2 32 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 33 "unconnected-(J1-Pin_a17-Pada17)")
@@ -924,7 +890,7 @@
 		(pad "a18" thru_hole oval
 			(at -2 34 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 57 "unconnected-(J1-Pin_a18-Pada18)")
@@ -935,7 +901,7 @@
 		(pad "a19" thru_hole oval
 			(at -2 36 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 4 "unconnected-(J1-Pin_a19-Pada19)")
@@ -946,7 +912,7 @@
 		(pad "a20" thru_hole oval
 			(at -2 38 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 5 "unconnected-(J1-Pin_a20-Pada20)")
@@ -957,7 +923,7 @@
 		(pad "a21" thru_hole oval
 			(at -2 40 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 10 "unconnected-(J1-Pin_a21-Pada21)")
@@ -968,7 +934,7 @@
 		(pad "a22" thru_hole oval
 			(at -2 42 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 42 "unconnected-(J1-Pin_a22-Pada22)")
@@ -979,7 +945,7 @@
 		(pad "a23" thru_hole oval
 			(at -2 44 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 29 "unconnected-(J1-Pin_a23-Pada23)")
@@ -990,7 +956,7 @@
 		(pad "a24" thru_hole oval
 			(at -2 46 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "unconnected-(J1-Pin_a24-Pada24)")
@@ -1001,7 +967,7 @@
 		(pad "a25" thru_hole oval
 			(at -2 48 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 38 "unconnected-(J1-Pin_a25-Pada25)")
@@ -1012,7 +978,7 @@
 		(pad "a26" thru_hole oval
 			(at -2 50 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 41 "unconnected-(J1-Pin_a26-Pada26)")
@@ -1023,7 +989,7 @@
 		(pad "a27" thru_hole oval
 			(at -2 52 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 19 "unconnected-(J1-Pin_a27-Pada27)")
@@ -1034,7 +1000,7 @@
 		(pad "a28" thru_hole oval
 			(at -2 54 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 34 "unconnected-(J1-Pin_a28-Pada28)")
@@ -1045,7 +1011,7 @@
 		(pad "a29" thru_hole oval
 			(at -2 56 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 60 "unconnected-(J1-Pin_a29-Pada29)")
@@ -1056,7 +1022,7 @@
 		(pad "a30" thru_hole oval
 			(at -2 58 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 15 "unconnected-(J1-Pin_a30-Pada30)")
@@ -1064,10 +1030,10 @@
 			(pintype "passive")
 			(uuid "301043fc-5696-4462-81c8-19b01ec486ad")
 		)
-		(pad "b1" thru_hole rect
+		(pad "b1" thru_hole oval
 			(at 0 0 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 47 "unconnected-(J1-Pin_b1-Padb1)")
@@ -1078,7 +1044,7 @@
 		(pad "b2" thru_hole oval
 			(at 0 2 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 21 "unconnected-(J1-Pin_b2-Padb2)")
@@ -1089,7 +1055,7 @@
 		(pad "b3" thru_hole oval
 			(at 0 4 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 16 "unconnected-(J1-Pin_b3-Padb3)")
@@ -1100,7 +1066,7 @@
 		(pad "b4" thru_hole oval
 			(at 0 6 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 56 "unconnected-(J1-Pin_b4-Padb4)")
@@ -1111,7 +1077,7 @@
 		(pad "b5" thru_hole oval
 			(at 0 8 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 6 "unconnected-(J1-Pin_b5-Padb5)")
@@ -1122,7 +1088,7 @@
 		(pad "b6" thru_hole oval
 			(at 0 10 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 55 "unconnected-(J1-Pin_b6-Padb6)")
@@ -1133,7 +1099,7 @@
 		(pad "b7" thru_hole oval
 			(at 0 12 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 36 "unconnected-(J1-Pin_b7-Padb7)")
@@ -1144,7 +1110,7 @@
 		(pad "b8" thru_hole oval
 			(at 0 14 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 43 "unconnected-(J1-Pin_b8-Padb8)")
@@ -1155,7 +1121,7 @@
 		(pad "b9" thru_hole oval
 			(at 0 16 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 12 "unconnected-(J1-Pin_b9-Padb9)")
@@ -1166,7 +1132,7 @@
 		(pad "b10" thru_hole oval
 			(at 0 18 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 32 "unconnected-(J1-Pin_b10-Padb10)")
@@ -1177,7 +1143,7 @@
 		(pad "b11" thru_hole oval
 			(at 0 20 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 11 "unconnected-(J1-Pin_b11-Padb11)")
@@ -1188,7 +1154,7 @@
 		(pad "b12" thru_hole oval
 			(at 0 22 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 23 "unconnected-(J1-Pin_b12-Padb12)")
@@ -1199,7 +1165,7 @@
 		(pad "b13" thru_hole oval
 			(at 0 24 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 39 "unconnected-(J1-Pin_b13-Padb13)")
@@ -1210,7 +1176,7 @@
 		(pad "b14" thru_hole oval
 			(at 0 26 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 18 "unconnected-(J1-Pin_b14-Padb14)")
@@ -1221,7 +1187,7 @@
 		(pad "b15" thru_hole oval
 			(at 0 28 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 54 "unconnected-(J1-Pin_b15-Padb15)")
@@ -1232,7 +1198,7 @@
 		(pad "b16" thru_hole oval
 			(at 0 30 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 28 "unconnected-(J1-Pin_b16-Padb16)")
@@ -1243,7 +1209,7 @@
 		(pad "b17" thru_hole oval
 			(at 0 32 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 26 "unconnected-(J1-Pin_b17-Padb17)")
@@ -1254,7 +1220,7 @@
 		(pad "b18" thru_hole oval
 			(at 0 34 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 35 "unconnected-(J1-Pin_b18-Padb18)")
@@ -1265,7 +1231,7 @@
 		(pad "b19" thru_hole oval
 			(at 0 36 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 40 "unconnected-(J1-Pin_b19-Padb19)")
@@ -1276,7 +1242,7 @@
 		(pad "b20" thru_hole oval
 			(at 0 38 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 51 "unconnected-(J1-Pin_b20-Padb20)")
@@ -1287,7 +1253,7 @@
 		(pad "b21" thru_hole oval
 			(at 0 40 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 27 "unconnected-(J1-Pin_b21-Padb21)")
@@ -1298,7 +1264,7 @@
 		(pad "b22" thru_hole oval
 			(at 0 42 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 24 "unconnected-(J1-Pin_b22-Padb22)")
@@ -1309,7 +1275,7 @@
 		(pad "b23" thru_hole oval
 			(at 0 44 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 52 "unconnected-(J1-Pin_b23-Padb23)")
@@ -1320,7 +1286,7 @@
 		(pad "b24" thru_hole oval
 			(at 0 46 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 48 "unconnected-(J1-Pin_b24-Padb24)")
@@ -1331,7 +1297,7 @@
 		(pad "b25" thru_hole oval
 			(at 0 48 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 46 "unconnected-(J1-Pin_b25-Padb25)")
@@ -1342,7 +1308,7 @@
 		(pad "b26" thru_hole oval
 			(at 0 50 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 17 "unconnected-(J1-Pin_b26-Padb26)")
@@ -1353,7 +1319,7 @@
 		(pad "b27" thru_hole oval
 			(at 0 52 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 14 "unconnected-(J1-Pin_b27-Padb27)")
@@ -1364,7 +1330,7 @@
 		(pad "b28" thru_hole oval
 			(at 0 54 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 8 "unconnected-(J1-Pin_b28-Padb28)")
@@ -1375,7 +1341,7 @@
 		(pad "b29" thru_hole oval
 			(at 0 56 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 50 "unconnected-(J1-Pin_b29-Padb29)")
@@ -1386,7 +1352,7 @@
 		(pad "b30" thru_hole oval
 			(at 0 58 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 22 "unconnected-(J1-Pin_b30-Padb30)")
@@ -1394,6 +1360,7 @@
 			(pintype "passive")
 			(uuid "4f334427-5620-4e88-a7d7-2c6779ed8202")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.00mm.3dshapes/PinSocket_2x30_P2.00mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1431,19 +1398,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d5c32f1a-1cce-40c4-bed6-17b103c531db")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1486,7 +1440,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "71b5b7d7-efed-4dac-a07c-9a0183364c6e")
 		)
@@ -1497,7 +1451,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "a6e7ed95-f9dd-42e6-ad30-ef61d5ade250")
 		)
@@ -1519,6 +1473,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "526ec2aa-a7c1-4c83-99cc-d753352b3c88")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_2mm"
 		(layer "F.Cu")
@@ -1545,19 +1500,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8c6404c7-22ca-490f-9ce2-b69581e6aa95")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1600,7 +1542,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "b39ea666-0e67-42dd-9a5c-19e7b4099665")
 		)
@@ -1611,7 +1553,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "4de88d65-05a2-413a-864b-d303e42a2af0")
 		)
@@ -1633,6 +1575,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "e64fffb7-c847-44d3-8eb8-38d995546d8e")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_2mm"
 		(layer "F.Cu")
@@ -1659,19 +1602,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d7fb84bf-439d-4984-a8b5-1de43d4f389f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1714,7 +1644,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "04cdce34-f449-4840-a1f8-998eb47ac366")
 		)
@@ -1725,7 +1655,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "fb0ecb86-b590-4b87-bfb3-8dd4c0ca36db")
 		)
@@ -1747,6 +1677,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "e94bec45-4c9d-4b08-8126-72b027f93bcb")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 		(layer "F.Cu")
@@ -1773,19 +1704,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0dae50bb-2236-4e96-b264-ba9d59ba06b4")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1828,7 +1746,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "df27be4a-fe40-4c0c-9035-2bb9e4a8ccb4")
 		)
@@ -1839,7 +1757,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "41a8286b-fbae-4ecd-b82b-8ed431eea20e")
 		)
@@ -1883,6 +1801,7 @@
 			(pintype "input")
 			(uuid "80576d66-8c77-487d-b4c1-07b1e35a5285")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 		(layer "F.Cu")
@@ -1909,19 +1828,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0132ed2a-d209-4f68-a49c-2db6d666c90d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1964,7 +1870,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "4f5e6686-dbd1-4724-aff5-ebc500987f6e")
 		)
@@ -1975,7 +1881,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "b3d6503f-b618-42be-a359-a1027e029497")
 		)
@@ -2019,6 +1925,7 @@
 			(pintype "input")
 			(uuid "43c271e1-68a2-4c32-a1e0-99ffbbc62839")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_2mm"
 		(layer "F.Cu")
@@ -2045,19 +1952,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "34e2ccdb-239a-403b-ad6e-2bed6f5ddb18")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2100,7 +1994,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "557975fb-bae5-462d-9dce-ed8eb7d74eb5")
 		)
@@ -2111,7 +2005,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "0bbd95f6-cf74-447b-a8f3-9d11caec2d56")
 		)
@@ -2133,6 +2027,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "fcb1086a-04b1-4c6c-8feb-00a12d8491a9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_PinSocket_2.00mm:PinSocket_2x30_P2.00mm_Vertical"
 		(layer "F.Cu")
@@ -2159,19 +2054,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.00mm:PinSocket_2x30_P2.00mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d8e6cc75-36d7-4e5c-b64f-a1fd8f99956b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2391,7 +2273,7 @@
 		(pad "c1" thru_hole oval
 			(at -2 0 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 94 "unconnected-(J2-Pin_a1-Padc1)")
@@ -2402,7 +2284,7 @@
 		(pad "c2" thru_hole oval
 			(at -2 2 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 63 "unconnected-(J2-Pin_a2-Padc2)")
@@ -2413,7 +2295,7 @@
 		(pad "c3" thru_hole oval
 			(at -2 4 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 113 "unconnected-(J2-Pin_a3-Padc3)")
@@ -2424,7 +2306,7 @@
 		(pad "c4" thru_hole oval
 			(at -2 6 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 111 "unconnected-(J2-Pin_a4-Padc4)")
@@ -2435,7 +2317,7 @@
 		(pad "c5" thru_hole oval
 			(at -2 8 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 112 "unconnected-(J2-Pin_a5-Padc5)")
@@ -2446,7 +2328,7 @@
 		(pad "c6" thru_hole oval
 			(at -2 10 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 116 "unconnected-(J2-Pin_a6-Padc6)")
@@ -2457,7 +2339,7 @@
 		(pad "c7" thru_hole oval
 			(at -2 12 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 110 "unconnected-(J2-Pin_a7-Padc7)")
@@ -2468,7 +2350,7 @@
 		(pad "c8" thru_hole oval
 			(at -2 14 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 66 "unconnected-(J2-Pin_a8-Padc8)")
@@ -2479,7 +2361,7 @@
 		(pad "c9" thru_hole oval
 			(at -2 16 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 114 "unconnected-(J2-Pin_a9-Padc9)")
@@ -2490,7 +2372,7 @@
 		(pad "c10" thru_hole oval
 			(at -2 18 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 87 "unconnected-(J2-Pin_a10-Padc10)")
@@ -2501,7 +2383,7 @@
 		(pad "c11" thru_hole oval
 			(at -2 20 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 76 "unconnected-(J2-Pin_a11-Padc11)")
@@ -2512,7 +2394,7 @@
 		(pad "c12" thru_hole oval
 			(at -2 22 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 82 "unconnected-(J2-Pin_a12-Padc12)")
@@ -2523,7 +2405,7 @@
 		(pad "c13" thru_hole oval
 			(at -2 24 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 88 "unconnected-(J2-Pin_a13-Padc13)")
@@ -2534,7 +2416,7 @@
 		(pad "c14" thru_hole oval
 			(at -2 26 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 64 "unconnected-(J2-Pin_a14-Padc14)")
@@ -2545,7 +2427,7 @@
 		(pad "c15" thru_hole oval
 			(at -2 28 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 71 "unconnected-(J2-Pin_a15-Padc15)")
@@ -2556,7 +2438,7 @@
 		(pad "c16" thru_hole oval
 			(at -2 30 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 117 "unconnected-(J2-Pin_a16-Padc16)")
@@ -2567,7 +2449,7 @@
 		(pad "c17" thru_hole oval
 			(at -2 32 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 77 "unconnected-(J2-Pin_a17-Padc17)")
@@ -2578,7 +2460,7 @@
 		(pad "c18" thru_hole oval
 			(at -2 34 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 99 "unconnected-(J2-Pin_a18-Padc18)")
@@ -2589,7 +2471,7 @@
 		(pad "c19" thru_hole oval
 			(at -2 36 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 102 "unconnected-(J2-Pin_a19-Padc19)")
@@ -2600,7 +2482,7 @@
 		(pad "c20" thru_hole oval
 			(at -2 38 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 115 "unconnected-(J2-Pin_a20-Padc20)")
@@ -2611,7 +2493,7 @@
 		(pad "c21" thru_hole oval
 			(at -2 40 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 104 "unconnected-(J2-Pin_a21-Padc21)")
@@ -2622,7 +2504,7 @@
 		(pad "c22" thru_hole oval
 			(at -2 42 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 118 "unconnected-(J2-Pin_a22-Padc22)")
@@ -2633,7 +2515,7 @@
 		(pad "c23" thru_hole oval
 			(at -2 44 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 97 "unconnected-(J2-Pin_a23-Padc23)")
@@ -2644,7 +2526,7 @@
 		(pad "c24" thru_hole oval
 			(at -2 46 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 120 "unconnected-(J2-Pin_a24-Padc24)")
@@ -2655,7 +2537,7 @@
 		(pad "c25" thru_hole oval
 			(at -2 48 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 68 "unconnected-(J2-Pin_a25-Padc25)")
@@ -2666,7 +2548,7 @@
 		(pad "c26" thru_hole oval
 			(at -2 50 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 103 "unconnected-(J2-Pin_a26-Padc26)")
@@ -2677,7 +2559,7 @@
 		(pad "c27" thru_hole oval
 			(at -2 52 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 65 "unconnected-(J2-Pin_a27-Padc27)")
@@ -2688,7 +2570,7 @@
 		(pad "c28" thru_hole oval
 			(at -2 54 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 91 "unconnected-(J2-Pin_a28-Padc28)")
@@ -2699,7 +2581,7 @@
 		(pad "c29" thru_hole oval
 			(at -2 56 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 100 "unconnected-(J2-Pin_a29-Padc29)")
@@ -2710,7 +2592,7 @@
 		(pad "c30" thru_hole oval
 			(at -2 58 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 101 "unconnected-(J2-Pin_a30-Padc30)")
@@ -2721,7 +2603,7 @@
 		(pad "d1" thru_hole rect
 			(at 0 0 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 67 "unconnected-(J2-Pin_b1-Padd1)")
@@ -2732,7 +2614,7 @@
 		(pad "d2" thru_hole oval
 			(at 0 2 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 108 "unconnected-(J2-Pin_b2-Padd2)")
@@ -2743,7 +2625,7 @@
 		(pad "d3" thru_hole oval
 			(at 0 4 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 62 "unconnected-(J2-Pin_b3-Padd3)")
@@ -2754,7 +2636,7 @@
 		(pad "d4" thru_hole oval
 			(at 0 6 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 83 "unconnected-(J2-Pin_b4-Padd4)")
@@ -2765,7 +2647,7 @@
 		(pad "d5" thru_hole oval
 			(at 0 8 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 78 "unconnected-(J2-Pin_b5-Padd5)")
@@ -2776,7 +2658,7 @@
 		(pad "d6" thru_hole oval
 			(at 0 10 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 106 "unconnected-(J2-Pin_b6-Padd6)")
@@ -2787,7 +2669,7 @@
 		(pad "d7" thru_hole oval
 			(at 0 12 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 69 "unconnected-(J2-Pin_b7-Padd7)")
@@ -2798,7 +2680,7 @@
 		(pad "d8" thru_hole oval
 			(at 0 14 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 105 "unconnected-(J2-Pin_b8-Padd8)")
@@ -2809,7 +2691,7 @@
 		(pad "d9" thru_hole oval
 			(at 0 16 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 73 "unconnected-(J2-Pin_b9-Padd9)")
@@ -2820,7 +2702,7 @@
 		(pad "d10" thru_hole oval
 			(at 0 18 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 70 "unconnected-(J2-Pin_b10-Padd10)")
@@ -2831,7 +2713,7 @@
 		(pad "d11" thru_hole oval
 			(at 0 20 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 89 "unconnected-(J2-Pin_b11-Padd11)")
@@ -2842,7 +2724,7 @@
 		(pad "d12" thru_hole oval
 			(at 0 22 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 98 "unconnected-(J2-Pin_b12-Padd12)")
@@ -2853,7 +2735,7 @@
 		(pad "d13" thru_hole oval
 			(at 0 24 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 96 "unconnected-(J2-Pin_b13-Padd13)")
@@ -2864,7 +2746,7 @@
 		(pad "d14" thru_hole oval
 			(at 0 26 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 107 "unconnected-(J2-Pin_b14-Padd14)")
@@ -2875,7 +2757,7 @@
 		(pad "d15" thru_hole oval
 			(at 0 28 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 81 "unconnected-(J2-Pin_b15-Padd15)")
@@ -2886,7 +2768,7 @@
 		(pad "d16" thru_hole oval
 			(at 0 30 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 72 "unconnected-(J2-Pin_b16-Padd16)")
@@ -2897,7 +2779,7 @@
 		(pad "d17" thru_hole oval
 			(at 0 32 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 80 "unconnected-(J2-Pin_b17-Padd17)")
@@ -2908,7 +2790,7 @@
 		(pad "d18" thru_hole oval
 			(at 0 34 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 90 "unconnected-(J2-Pin_b18-Padd18)")
@@ -2919,7 +2801,7 @@
 		(pad "d19" thru_hole oval
 			(at 0 36 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 121 "unconnected-(J2-Pin_b19-Padd19)")
@@ -2930,7 +2812,7 @@
 		(pad "d20" thru_hole oval
 			(at 0 38 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 93 "unconnected-(J2-Pin_b20-Padd20)")
@@ -2941,7 +2823,7 @@
 		(pad "d21" thru_hole oval
 			(at 0 40 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 95 "unconnected-(J2-Pin_b21-Padd21)")
@@ -2952,7 +2834,7 @@
 		(pad "d22" thru_hole oval
 			(at 0 42 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 119 "unconnected-(J2-Pin_b22-Padd22)")
@@ -2963,7 +2845,7 @@
 		(pad "d23" thru_hole oval
 			(at 0 44 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 92 "unconnected-(J2-Pin_b23-Padd23)")
@@ -2974,7 +2856,7 @@
 		(pad "d24" thru_hole oval
 			(at 0 46 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 84 "unconnected-(J2-Pin_b24-Padd24)")
@@ -2985,7 +2867,7 @@
 		(pad "d25" thru_hole oval
 			(at 0 48 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 85 "unconnected-(J2-Pin_b25-Padd25)")
@@ -2996,7 +2878,7 @@
 		(pad "d26" thru_hole oval
 			(at 0 50 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 75 "unconnected-(J2-Pin_b26-Padd26)")
@@ -3007,7 +2889,7 @@
 		(pad "d27" thru_hole oval
 			(at 0 52 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 109 "unconnected-(J2-Pin_b27-Padd27)")
@@ -3018,7 +2900,7 @@
 		(pad "d28" thru_hole oval
 			(at 0 54 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 86 "unconnected-(J2-Pin_b28-Padd28)")
@@ -3029,7 +2911,7 @@
 		(pad "d29" thru_hole oval
 			(at 0 56 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 74 "unconnected-(J2-Pin_b29-Padd29)")
@@ -3040,7 +2922,7 @@
 		(pad "d30" thru_hole oval
 			(at 0 58 180)
 			(size 1.35 1.35)
-			(drill 0.8)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 79 "unconnected-(J2-Pin_b30-Padd30)")
@@ -3048,6 +2930,7 @@
 			(pintype "passive")
 			(uuid "4de669af-122e-4b6c-8ab2-2e86b734db2f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.00mm.3dshapes/PinSocket_2x30_P2.00mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3256,6 +3139,22 @@
 			(xy 49.92 81.725) (xy 49.92 107.125)
 		)
 		(height 1.8)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 2)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
 		(gr_text "25.4000 mm"
 			(at 48.12 94.425 90)
 			(layer "Dwgs.User")
@@ -3267,6 +3166,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Dwgs.User")
+		(uuid "5ba0192f-fe47-4b39-a6b3-4c92e07efba0")
+		(pts
+			(xy 49.92 139.51) (xy 145.805 139.51)
+		)
+		(height 2.03)
 		(format
 			(prefix "")
 			(suffix "")
@@ -3278,17 +3186,11 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 2)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Dwgs.User")
-		(uuid "5ba0192f-fe47-4b39-a6b3-4c92e07efba0")
-		(pts
-			(xy 49.92 139.51) (xy 145.805 139.51)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 2.03)
 		(gr_text "95.8850 mm"
 			(at 97.8625 141.54 0)
 			(layer "Dwgs.User")
@@ -3300,6 +3202,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Dwgs.User")
+		(uuid "ae10e72f-ccf9-45c3-8add-9f04b06cb3b4")
+		(pts
+			(xy 145.805 49.34) (xy 145.805 139.51)
+		)
+		(height -2.315)
 		(format
 			(prefix "")
 			(suffix "")
@@ -3311,17 +3222,11 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 2)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Dwgs.User")
-		(uuid "ae10e72f-ccf9-45c3-8add-9f04b06cb3b4")
-		(pts
-			(xy 145.805 49.34) (xy 145.805 139.51)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -2.315)
 		(gr_text "90.1700 mm"
 			(at 148.12 94.425 90)
 			(layer "Dwgs.User")
@@ -3333,6 +3238,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Dwgs.User")
+		(uuid "cedcf360-bc38-4919-a0b8-deebc5bbd9f0")
+		(pts
+			(xy 49.92 69.025) (xy 49.92 119.825)
+		)
+		(height 3.8)
 		(format
 			(prefix "")
 			(suffix "")
@@ -3344,17 +3258,11 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 2)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Dwgs.User")
-		(uuid "cedcf360-bc38-4919-a0b8-deebc5bbd9f0")
-		(pts
-			(xy 49.92 69.025) (xy 49.92 119.825)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 3.8)
 		(gr_text "50.8000 mm"
 			(at 46.12 94.425 90)
 			(layer "Dwgs.User")
@@ -3366,19 +3274,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 2)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(zone
 		(net 1)
@@ -3794,6 +3689,10 @@
 			(copperpour not_allowed)
 			(footprints allowed)
 		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
@@ -3822,6 +3721,10 @@
 			(copperpour not_allowed)
 			(footprints allowed)
 		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
@@ -3849,6 +3752,10 @@
 			(pads not_allowed)
 			(copperpour not_allowed)
 			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
 		)
 		(fill
 			(thermal_gap 0.5)
@@ -4230,6 +4137,10 @@
 			(copperpour not_allowed)
 			(footprints allowed)
 		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
@@ -4240,4 +4151,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
